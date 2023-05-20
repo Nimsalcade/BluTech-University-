@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <title>BluTech University</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <style>
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+    <style>
+      .dropdown-menu {
+        min-width: 300px; /* Adjust this value as needed */
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <script nonce="cbaf2ddf-e54a-4d70-a472-c4e0940637db">
+      (function (w, d) {
+        !(function (bg, bh, bi, bj) {
+          bg[bi] = bg[bi] || {};
+          bg[bi].executed = [];
+          bg.zaraz = {
+            deferred: [],
+            listeners: [],
+          };
+          bg.zaraz.q = [];
+          bg.zaraz._f = function (bk) {
+            return function () {
+              var bl = Array.prototype.slice.call(arguments);
+              bg.zaraz.q.push({
+                m: bk,
+                a: bl,
+              });
+            };
+          };
+          for (const bm of ["track", "set", "debug"])
+            bg.zaraz[bm] = bg.zaraz._f(bm);
+          bg.zaraz.init = () => {
+            var bn = bh.getElementsByTagName(bj)[0],
+              bo = bh.createElement(bj),
+              bp = bh.getElementsByTagName("title")[0];
+            bp && (bg[bi].t = bh.getElementsByTagName("title")[0].text);
+            bg[bi].x = Math.random();
+            bg[bi].w = bg.screen.width;
+            bg[bi].h = bg.screen.height;
+            bg[bi].j = bg.innerHeight;
+            bg[bi].e = bg.innerWidth;
+            bg[bi].l = bg.location.href;
+            bg[bi].r = bh.referrer;
+            bg[bi].k = bg.screen.colorDepth;
+            bg[bi].n = bh.characterSet;
+            bg[bi].o = new Date().getTimezoneOffset();
+            if (bg.dataLayer)
+              for (const bt of Object.entries(
+                Object.entries(dataLayer).reduce((bu, bv) => ({
+                  ...bu[1],
+                  ...bv[1],
+                }))
+              ))
+                zaraz.set(bt[0], bt[1], {
+                  scope: "page",
+                });
+            bg[bi].q = [];
+            for (; bg.zaraz.q.length; ) {
+              const bw = bg.zaraz.q.shift();
+              bg[bi].q.push(bw);
+            }
+            bo.defer = !0;
+            for (const bx of [localStorage, sessionStorage])
+              Object.keys(bx || {})
+                .filter((bz) => bz.startsWith("_zaraz_"))
+                .forEach((by) => {
+                  try {
+                    bg[bi]["z_" + by.slice(7)] = JSON.parse(bx.getItem(by));
+                  } catch {
+                    bg[bi]["z_" + by.slice(7)] = bx.getItem(by);
+                  }
+                });
+            bo.referrerPolicy = "origin";
+            bo.src =
+              "/cdn-cgi/zaraz/s.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(bg[bi])));
+            bn.parentNode.insertBefore(bo, bn);
+          };
+          ["complete", "interactive"].includes(bh.readyState)
+            ? zaraz.init()
+            : bg.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, "zarazData", "script");
+      })(window, document);
+    </script>
+  </head>
+
+  <body>
+    <header class="header_area">
+      <div class="main_menu">
+        <div class="search_input" id="search_input_box">
+          <div class="container">
+            <form class="d-flex justify-content-between" method="" action="">
+              <input
+                type="text"
+                class="form-control"
+                id="search_input"
+                placeholder="Search Here"
+              />
+              <button type="submit" class="btn"></button>
+              <span
+                class="ti-close"
+                id="close_search"
+                title="Close Search"
+              ></span>
+            </form>
+          </div>
+        </div>
+        <nav
+          class="navbar navbar-expand-lg navbar-light"
+          style="background-color: #8a2be2"
+        >
+          <div class="container">
+            <a class="navbar-brand logo_h" href="index.html">
+              <img
+                src="img/logo5.ong.png"
+                alt=""
+                style="width: 163px; height: 48px"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span> <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="nav navbar-nav menu_nav ml-auto"
+                style="color: #ffffff"
+              >
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item submenu dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Academics</a
+                  >
+                  <ul class="dropdown-menu" style="min-width: 300px">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="information-systems-management.html"
+                        >Information Systems Management</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="cybersecurity.html"
+                        >Cybersecurity</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="software-engineering.html"
+                        >Software Engineering</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="data-science-analytics.html"
+                        >Data Science and Analytics</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="healthcare-technology.html"
+                        >Healthcare Technology</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="sustainable-renewable-energy-technologies.html"
+                        >Sustainable and Renewable Energy Technologies</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="internet-of-things.html"
+                        >Internet of Things (IoT)</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="mobile-wireless-technologies.html"
+                        >Mobile and Wireless Technologies</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="agricultural-technology.html"
+                        >Agricultural Technology (AgTech)</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="technology-entrepreneurship.html"
+                        >Technology Entrepreneurship</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="admissions.html">Admissions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="student-life.html">Student Life</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="research-innovation.html"
+                    >Research & Innovation</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="alumni.html">Alumni</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="home_banner_area">
+      <div class="banner_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="banner_content text-center">
+                <p class="text-uppercase">
+                  Best Technology University in Somalia
+                </p>
+                <h2 class="text-uppercase mt-4 mb-5">
+                  Welcome to BluTech University
+                </h2>
+                <div>
+                  <a href="#" class="primary-btn2 mb-3 mb-sm-0">learn more</a>
+                  <a href="#" class="primary-btn ml-sm-3 ml-0">see courses</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature_area section_gap_top">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="main_title">
+              <h2 class="mb-3">Our Unique Features</h2>
+              <p>
+                BluTech University is committed to providing quality education
+                in the field of technology.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single_feature">
+              <div class="icon"><span class="flaticon-student"></span></div>
+              <div class="desc">
+                <h4 class="mt-3 mb-2">Scholarship Facility</h4>
+                <p>
+                  We provide scholarships to deserving students to help them
+                  achieve their dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single_feature">
+              <div class="icon"><span class="flaticon-book"></span></div>
+              <div class="desc">
+                <h4 class="mt-3 mb-2">Quality Education</h4>
+                <p>
+                  Our curriculum is designed to equip students with the skills
+                  needed in the modern world.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single_feature">
+              <div class="icon"><span class="flaticon-earth"></span></div>
+              <div class="desc">
+                <h4 class="mt-3 mb-2">Global Recognition</h4>
+                <p>
+                  Our degrees are recognized globally, opening doors to various
+                  opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- You can continue modifying the rest of the sections in a similar manner. -->
+
+<div class="popular_courses" style="overflow: hidden;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <div class="main_title">
+          <h2 class="mb-3">Our Popular Courses</h2>
+          <p>
+            Explore our range of courses designed to equip you with the skills needed in the modern world.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+         <div class="active_course" style="display: flex; animation: slide 20s linear infinite;">
+          <!-- You can replace the course details and images with actual courses offered by BluTech University -->
+          <!-- Single course item -->
+          <div class="single_course" style="flex: 0 0 auto; width: 300px; margin-right: 10px;">
+            <div class="course_head">
+              <img class="img-fluid" src="img/courses/c1.jpg" alt="" />
+            </div>
+            <div class="course_content">
+              <span class="tag mb-4 d-inline-block">Cybersecurity</span>
+              <h4 class="mb-3">
+                <a href="course-details.html">Cybersecurity</a>
+              </h4>
+              <p>
+                Learn to protect sensitive information and infrastructure in the digital world.
+              </p>
+            </div>
+          </div>
+            <div class="single_course" style="flex: 0 0 auto; width: 300px; margin-right: 10px;">
+            <div class="course_head">
+              <img class="img-fluid" src="img/courses/c1.jpg" alt="" />
+            </div>
+            <div class="course_content">
+              <span class="tag mb-4 d-inline-block">Cybersecurity</span>
+              <h4 class="mb-3">
+                <a href="course-details.html">Cybersecurity</a>
+              </h4>
+              <p>
+                Learn to protect sensitive information and infrastructure in the digital world.
+              </p>
+            </div>
+          </div>  <div class="single_course" style="flex: 0 0 auto; width: 300px; margin-right: 10px;">
+            <div class="course_head">
+              <img class="img-fluid" src="img/courses/c1.jpg" alt="" />
+            </div>
+            <div class="course_content">
+              <span class="tag mb-4 d-inline-block">Cybersecurity</span>
+              <h4 class="mb-3">
+                <a href="course-details.html">Cybersecurity</a>
+              </h4>
+              <p>
+                Learn to protect sensitive information and infrastructure in the digital world.
+              </p>
+            </div>
+          </div>  <div class="single_course" style="flex: 0 0 auto; width: 300px; margin-right: 10px;">
+            <div class="course_head">
+              <img class="img-fluid" src="img/courses/c1.jpg" alt="" />
+            </div>
+            <div class="course_content">
+              <span class="tag mb-4 d-inline-block">Cybersecurity</span>
+              <h4 class="mb-3">
+                <a href="course-details.html">Cybersecurity</a>
+              </h4>
+              <p>
+                Learn to protect sensitive information and infrastructure in the digital world.
+              </p>
+            </div>
+          </div>  <div class="single_course" style="flex: 0 0 auto; width: 300px; margin-right: 10px;">
+            <div class="course_head">
+              <img class="img-fluid" src="img/courses/c1.jpg" alt="" />
+            </div>
+            <div class="course_content">
+              <span class="tag mb-4 d-inline-block">Cybersecurity</span>
+              <h4 class="mb-3">
+                <a href="course-details.html">Cybersecurity</a>
+              </h4>
+              <p>
+                Learn to protect sensitive information and infrastructure in the digital world.
+              </p>
+            </div>
+          </div>  <div class="single_course" style="flex: 0 0 auto; width: 300px; margin-right: 10px;">
+            <div class="course_head">
+              <img class="img-fluid" src="img/courses/c1.jpg" alt="" />
+            </div>
+            <div class="course_content">
+              <span class="tag mb-4 d-inline-block">Cybersecurity</span>
+              <h4 class="mb-3">
+                <a href="course-details.html">Cybersecurity</a>
+              </h4>
+              <p>
+                Learn to protect sensitive information and infrastructure in the digital world.
+              </p>
+            </div>
+          </div>  <div class="single_course" style="flex: 0 0 auto; width: 300px; margin-right: 10px;">
+            <div class="course_head">
+              <img class="img-fluid" src="img/courses/c1.jpg" alt="" />
+            </div>
+            <div class="course_content">
+              <span class="tag mb-4 d-inline-block">Cybersecurity</span>
+              <h4 class="mb-3">
+                <a href="course-details.html">Cybersecurity</a>
+              </h4>
+              <p>
+                Learn to protect sensitive information and infrastructure in the digital world.
+              </p>
+            </div>
+          </div>  <div class="single_course" style="flex: 0 0 auto; width: 300px; margin-right: 10px;">
+            <div class="course_head">
+              <img class="img-fluid" src="img/courses/c1.jpg" alt="" />
+            </div>
+            <div class="course_content">
+              <span class="tag mb-4 d-inline-block">Cybersecurity</span>
+              <h4 class="mb-3">
+                <a href="course-details.html">Cybersecurity</a>
+              </h4>
+              <p>
+                Learn to protect sensitive information and infrastructure in the digital world.
+              </p>
+            </div>
+          </div>  <div class="single_course" style="flex: 0 0 auto; width: 300px; margin-right: 10px;">
+            <div class="course_head">
+              <img class="img-fluid" src="img/courses/c1.jpg" alt="" />
+            </div>
+            <div class="course_content">
+              <span class="tag mb-4 d-inline-block">Cybersecurity</span>
+              <h4 class="mb-3">
+                <a href="course-details.html">Cybersecurity</a>
+              </h4>
+              <p>
+                Learn to protect sensitive information and infrastructure in the digital world.
+              </p>
+            </div>
+          </div>
+          <!-- Single course item -->
+          <div class="single_course">
+            <div class="course_head">
+              <img class="img-fluid" src="img/courses/c2.jpg" alt="" />
+            </div>
+            <div class="course_content">
+              <span class="tag mb-4 d-inline-block">Data Science</span>
+              <h4 class="mb-3">
+                <a href="course-details.html">Data Science and Analytics</a>
+              </h4>
+              <p>
+                Learn to analyze and interpret complex data to drive decision making.
+              </p>
+            </div>
+          </div>
+          <!-- Single course item -->
+          <div class="single_course">
+            <div class="course_head">
+              <img class="img-fluid" src="img/courses/c3.jpg" alt="" />
+            </div>
+            <div class="course_content">
+              <span class="tag mb-4 d-inline-block">Software Engineering</span>
+              <h4 class="mb-3">
+                <a href="course-details.html">Software Engineering</a>
+              </h4>
+              <p>
+                Learn to develop software solutions that address local and global needs.
+              </p>
+            </div>
+          </div>
+          <!-- Add more course items as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Registration Area -->
+<div class="section_gap registration_area">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <div class="row clock_sec clockdiv" id="clockdiv">
+          <div class="col-lg-12">
+            <h1 class="mb-3">Register Now</h1>
+            <p>
+              Join BluTech University and be part of a community that is shaping the future of technology.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1">
+        <div class="register_form">
+          <h3>Apply for Free</h3>
+          <p>Start your journey with us</p>
+          <!-- Registration form -->
+          <!-- Replace the action attribute with your form processing script -->
+          <formclass="form_area"
+            id="myForm"
+            action="mail.html"
+            method="post"
+          >
+            <div class="row">
+              <div class="col-lg-12 form_group">
+                <input
+                  name="name"
+                  placeholder="Your Name"
+                  required=""
+                  type="text"
+                />
+                <input
+                  name="phone"
+                  placeholder="Your Phone Number"
+                  required=""
+                  type="tel"
+                />
+                <input
+                  name="email"
+                  placeholder="Your Email Address"
+                  pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                  required=""
+                  type="email"
+                />
+              </div>
+              <div class="col-lg-12 text-center">
+                <button class="primary-btn">Submit</button>
+              </div>
+            </div>
+          </formclass=>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Trainer Area -->
+<section class="trainer_area section_gap_top">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <div class="main_title">
+          <h2 class="mb-3">Our Expert Faculty</h2>
+          <p>
+            Meet our team of experienced faculty who are dedicated to guiding our students towards success.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">      <!-- You can replace the faculty details and images with actual faculty members of BluTech University -->
+      <!-- Single faculty item -->
+      <div class="col-lg-2 col-md-6 col-sm-12 single-trainer" style="flex: 0 0 20%; max-width: 20%;">
+  <div class="thumb d-flex justify-content-sm-center">
+    <img class="img-fluid" src="img/male5.PNG" alt="" />
+  </div>
+  <div class="meta-text text-sm-center">
+    <h4>Prof. Mohamed Ridwa</h4>
+    <p class="designation">Sr. Faculty Data Science</p>
+    <div class="mb-4">
+      <p>
+        Prof. Mohamed Ridwa is a renowned expert in Data Science with over 20 years of experience in the field.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-2 col-md-6 col-sm-12 single-trainer" style="flex: 0 0 20%; max-width: 20%;">
+  <div class="thumb d-flex justify-content-sm-center">
+    <img class="img-fluid" src="img/female5.PNG" alt="" />
+  </div>
+  <div class="meta-text text-sm-center">
+    <h4>Prof. Hibo Muhumed</h4>
+    <p class="designation">Sr. Faculty Cybersecurity</p>
+    <div class="mb-4">
+      <p>
+        Prof. Hibo Muhumed is a leading authority in Cybersecurity with a decade of teaching experience.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-2 col-md-6 col-sm-12 single-trainer" style="flex: 0 0 20%; max-width: 20%;">
+  <div class="thumb d-flex justify-content-sm-center">
+    <img class="img-fluid" src="img/male4.PNG" alt="" />
+  </div>
+  <div class="meta-text text-sm-center">
+    <h4>Prof. Hassan Ali</h4>
+    <p class="designation">Sr. Faculty Software Engineering</p>
+    <div class="mb-4">
+      <p>
+        Prof. Hassan Ali is a respected figure in Software Engineering with numerous publications to his name.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-2 col-md-6 col-sm-12 single-trainer" style="flex: 0 0 20%; max-width: 20%;">
+  <div class="thumb d-flex justify-content-sm-center">
+    <img class="img-fluid" src="img/female4.PNG" alt="" />
+  </div>
+  <div class="meta-text text-sm-center">
+    <h4>Fatuma Khalif</h4>
+    <p class="designation">Sr. Faculty Information Systems Management</p>
+    <div class="mb-4">
+      <p>
+        Fatuma Khalif is an expert in Information Systems Management with a focus on modern enterprise solutions.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-lg-2 col-md-6 col-sm-12 single-trainer" style="flex: 0 0 20%; max-width: 20%;">
+  <div class="thumb d-flex justify-content-sm-center">
+    <img class="img-fluid" src="img/male3.PNG" alt="" />
+  </div>
+  <div class="meta-text text-sm-center">
+    <h4>Prof. Ibrahim Mohamed</h4>
+    <p class="designation">Sr. Faculty Machine Learning</p>
+    <div class="mb-4">
+      <p>
+        Prof. Ibrahim Mohamed is a leading expert in Machine Learning, contributing significantly to the field's advancements.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-2 col-md-6 col-sm-12 single-trainer" style="flex: 0 0 20%; max-width: 20%;">
+  <div class="thumb d-flex justify-content-sm-center">
+    <img class="img-fluid" src="img/female1.PNG" alt="" />
+  </div>
+  <div class="meta-text text-sm-center">
+    <h4>Prof. Huda Jama</h4>
+    <p class="designation">Sr. Faculty IoT</p>
+    <div class="mb-4">
+      <p>
+        Prof. Huda Jama specializes in IoT and she has been instrumental in developing cutting-edge curriculum in the field.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-2 col-md-6 col-sm-12 single-trainer" style="flex: 0 0 20%; max-width: 20%;">
+  <div class="thumb d-flex justify-content-sm-center">
+    <img class="img-fluid" src="img/male1.PNG" alt="" />
+  </div>
+  <div class="meta-text text-sm-center">
+    <h4>Prof. Ahmed Daani</h4>
+    <p class="designation">Sr. Faculty AI</p>
+    <div class="mb-4">
+      <p>
+        Prof. Ahmed Daani is a pioneer in AI research and has been teaching at BluTech University for over 15 years.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-2 col-md-6 col-sm-12 single-trainer" style="flex: 0 0 20%; max-width: 20%;">
+  <div class="thumb d-flex justify-content-sm-center">
+    <img class="img-fluid" src="img/female2.PNG" alt="" />
+  </div>
+  <div class="meta-text text-sm-center">
+    <h4>Prof. Ayaana Abdi</h4>
+    <p class="designation">Sr. Faculty Computer Science</p>
+    <div class="mb-4">
+      <p>
+        Prof. Ayaana Abdi is a seasoned educator in Computer Science with a passion for developing innovative teaching methods.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-2 col-md-6 col-sm-12 single-trainer" style="flex: 0 0 20%; max-width: 20%;">
+  <div class="thumb d-flex justify-content-sm-center">
+    <img class="img-fluid" src="img/male2.PNG" alt="" />
+  </div>
+  <div class="meta-text text-sm-center">
+    <h4>Prof. Farah Qani</h4>
+    <p class="designation">Sr. Faculty Data Analytics</p>
+    <div class="mb-4">
+      <p>
+        Prof. Farah Qani is a Data Analytics expert with a strong focus on practical applications of data in business.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-2 col-md-6 col-sm-12 single-trainer" style="flex: 0 0 20%; max-width: 20%;">
+  <div class="thumb d-flex justify-content-sm-center">
+    <img class="img-fluid" src="img/female3.PNG" alt="" />
+  </div>
+  <div class="meta-text text-sm-center">
+    <h4>Prof. Rahma Ali</h4>
+    <p class="designation">Sr. Faculty Network Security</p>
+    <div class="mb-4">
+      <p>
+        Prof. Rahma Ali is a Network Security specialist with a deep understanding of modern security challenges.
+      </p>
+    </div>
+  </div>
+</div>
+
+      <!-- Add more faculty items as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Events Area -->
+<div class="events_area">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <div class="main_title">
+          <h2 class="mb-3 text-white">Upcoming Events</h2>
+          <p>
+            Stay updated with the latest events happening at BluTech University.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- You can replace the event details and images with actual events happening at BluTech University -->
+      <!-- Single event item -->
+      <div class="col-lg-6 col-md-6">
+        <div class="single_event position-relative">
+          <div class="event_thumb">
+            <img src="img/event/e1.jpg" alt="" />
+          </div>
+          <div class="event_details">
+            <div class="d-flex mb-4">
+              <div class="date"><span>15</span> Jun</div>
+              <div class="time-location">
+                <p>
+                  <span class="ti-time mr-2"></span> 12:00 PM - 2:00 PM
+                </p>
+                <p>
+                  <span class="ti-location-pin mr-2"></span> BluTech Auditorium
+                </p>
+              </div>
+            </div>
+            <p>
+              Join us for our annual tech symposium featuring guest speakers from top tech companies.
+            </p>
+            <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more event items as needed -->
+      <div class="col-lg-12">
+        <div class="text-center pt-lg-5 pt-3">
+          <a href="#" class="event-link">
+            View All Events <img src="img/next.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonial Area -->
+<div class="testimonial_area section_gap">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <div class="main_title">
+          <h2 class="mb-3">What our students say</h2>
+          <p>
+            Hear from our students about their experiences at BluTech University.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="testi_slider owl-carousel">
+        <!-- You can replace the testimonial details and images with actual testimonials from BluTech University students -->
+        <!-- Single testimonial item -->
+        <div class="testi_item">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <img src="img/testimonials/t1.jpg" alt="" />
+            </div>
+            <div class="col-lg-8">
+              <div class="testi_text">
+                <h4>John Doe</h4>
+                <p>
+                  My experience at BluTech University has been incredible. The faculty are very supportive and the courses are challenging but rewarding.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Single testimonial item -->
+        <div class="testi_item">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <img src="img/testimonials/t2.jpg" alt="" />
+            </div>
+            <div class="col-lg-8">
+              <div class="testi_text">
+                <h4>Jane Smith</h4>
+                <p>
+                  BluTech University has provided me with the skills and knowledge to succeed in the tech industry. I highly recommend it!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more testimonial items as needed -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+           
+
+
+    <footer class="footer-area section_gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 single-footer-widget">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 single-footer-widget">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="student-life.html">Student Life</a></li>
+              <li><a href="alumni.html">Alumni</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 single-footer-widget">
+            <h4>About BluTech University</h4>
+            <p>
+              BluTech University is a leading institution of higher learning in
+              Somalia, dedicated to providing quality education in the field of
+              technology. We are committed to fostering innovation, promoting
+              research, and developing future leaders who can navigate the
+              challenges of the 21st century.
+            </p>
+          </div>
+        </div>
+        <div class="row footer-bottom d-flex justify-content-between">
+          <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | BluTech University
+          </p>
+          <div class="col-lg-4 col-sm-12 footer-social">
+            <a href="#"><i class="ti-facebook"></i></a>
+            <a href="#"><i class="ti-twitter"></i></a>
+            <a href="#"><i class="ti-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/owl-carousel-thumb.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
+      integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
+      data-cf-beacon='{"rayId":"7c77157f69fd6336","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
